@@ -6,6 +6,7 @@
 "
 " - http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
 " - http://tlvince.com/vim-respect-xdg
+" - https://gist.github.com/kaleb/3885679 (the original version)
 "
 " Instructions
 " ------------
