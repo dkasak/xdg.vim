@@ -20,6 +20,10 @@
 " - $XDG_CACHE_HOME/vim/swap
 " - $XDG_CACHE_HOME/vim/backup
 " - $XDG_CONFIG_HOME/vim
+"
+" Source this file from the top of your vimrc. vim still tries to read your
+" vimrc at the path ~/.vimrc so if you want to move that too, you'll have to run
+" vim with ```vim -u <path_to_vimrc>```.
 
 if empty("$XDG_CACHE_HOME")
     let $XDG_CACHE_HOME="$HOME/.cache"
