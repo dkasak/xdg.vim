@@ -10,10 +10,7 @@
 " Instructions
 " ------------
 "
-" The following directory structure must exist if you want VIM to actually use
-" them, e.g.
-" `mkdir -p $XDG_CACHE_HOME/vim/{undo,swap,backup} $XDG_CONFIG_HOME/vim` or
-" `mkdir -p $HOME/.cache/vim/{undo,swap,backup} " $HOME/.config`.
+" 1. Create the following directory structure:
 "
 " - $XDG_CACHE_HOME/vim
 " - $XDG_CACHE_HOME/vim/undo
@@ -21,9 +18,17 @@
 " - $XDG_CACHE_HOME/vim/backup
 " - $XDG_CONFIG_HOME/vim
 "
-" Source this file from the top of your vimrc. vim still tries to read your
-" vimrc at the path ~/.vimrc so if you want to move that too, you'll have to run
-" vim with "vim -u path_to_vimrc" or set VIMINIT.
+" Example commands:
+" `mkdir -p $XDG_CACHE_HOME/vim/{undo,swap,backup} $XDG_CONFIG_HOME/vim` or
+" `mkdir -p $HOME/.cache/vim/{undo,swap,backup} " $HOME/.config`.
+"
+" 2. Source this file from the top of your vimrc.
+" 3. (Optional) vim still tries to read your vimrc from standard paths, so if
+"    you want to move it elsewhere (e.g. $XDG_CONFIG_HOME/vim/vimrc), you can
+"    do oneof of two things:
+"       3a. Always run vim using "vim -u <path_to_vimrc>".
+"       3b. Set the environment variable VIMINIT to "source <path_to_vimrc>"
+"           (the content of VIMINIT can be any ex command).
 
 if empty("$XDG_CACHE_HOME")
     let $XDG_CACHE_HOME="$HOME/.cache"
