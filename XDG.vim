@@ -23,7 +23,7 @@
 "
 " Source this file from the top of your vimrc. vim still tries to read your
 " vimrc at the path ~/.vimrc so if you want to move that too, you'll have to run
-" vim with ```vim -u <path_to_vimrc>```.
+" vim with "vim -u path_to_vimrc".
 
 if empty("$XDG_CACHE_HOME")
     let $XDG_CACHE_HOME="$HOME/.cache"
