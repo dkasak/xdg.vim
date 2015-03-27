@@ -18,6 +18,7 @@
 " - $XDG_CACHE_HOME/vim/swap
 " - $XDG_CACHE_HOME/vim/backup
 " - $XDG_CONFIG_HOME/vim
+" - $XDG_DATA_HOME/vim/bundle   (optional, for a plugin manager such as Vundle)
 "
 " Example commands:
 " `mkdir -p $XDG_CACHE_HOME/vim/{undo,swap,backup} $XDG_CONFIG_HOME/vim` or
